@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Home from "./pages/Home";
+import AddAnswer from "./pages/AddAnswer";
+import CreateQuestion from "./pages/CreateQuestion";
+import OrderAnswerGroups from "./pages/CreateQuestion";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Switch>
+                    <Route path="/questions/:questionId/answers/add" component={AddAnswer}/>
+                    <Route path="/questions/add" component={CreateQuestion}/>
+                    <Route path="/questions/:questionId/order" component={OrderAnswerGroups}/>
+                    <Route path="/" component={Home}/>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
