@@ -6,7 +6,21 @@ const API = Axios.create({
 })
 
 const APIFetcher = {
+    /*
+    Example :
+    getSomeUrl: async function (someParam) {
+        const results = await get('someUrl', {param1: someParam})
+        return results
+    },
+    Usage :
+    APIFetcher.getSomeUrl(someParam)
+            .then(response => {
 
+            })
+            .catch(error => {
+                
+            })
+    */
 }
 
 async function get(url, params) {
