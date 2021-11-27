@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-class OrderAnswerGroups extends Component {
+class CreateQuestion extends Component {
     render() {
         return <div></div>
     }
 }
 
-export default OrderAnswerGroups;
+export default CreateQuestion;

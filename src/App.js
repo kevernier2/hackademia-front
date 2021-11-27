@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
 import AddAnswer from "./pages/AddAnswer";
 import CreateQuestion from "./pages/CreateQuestion";
-import OrderAnswerGroups from "./pages/CreateQuestion";
+import OrderAnswerGroups from "./pages/OrderAnswerGroups";
 
 function App() {
     return (
